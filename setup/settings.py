@@ -139,9 +139,18 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_CLASSES': [
         'rest_framework.throttling.AnonRateThrottle',
     ],
-    'DEFAULT_THROTTLE_RATES': {
-        'anon': '100/day',
-    }
+    # 'DEFAULT_THROTTLE_RATES': {
+    #     'anon': '100/day',
+    # },
+    
+    # 'DEFAULT_PARSER_CLASSES': [
+    #     'rest_framework_yaml.parsers.YAMLParser',
+    #     'rest_framework.parsers.JSONParser',
+    # ],
+    # 'DEFAULT_RENDERER_CLASSES': [
+    #     'rest_framework.renderers.JSONRenderer',
+    #     'rest_framework_yaml.renderers.YAMLRenderer',
+    # ],
 }
 
 CORS_ALLOWED_ORIGINS = [
